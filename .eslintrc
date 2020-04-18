@@ -1,13 +1,22 @@
 {
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
+  "extends": [
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
-    "semi": 2
+    "semi": 2,
+    "no-console": "warn",
+    "prettier/prettier": "error"
   }
 }
